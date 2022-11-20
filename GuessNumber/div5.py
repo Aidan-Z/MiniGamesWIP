@@ -61,17 +61,18 @@ def number():
                         print(abv_20_list)
                         print('is number divisible by 2?')
                         div_2v2 = input('Y/N: ').capitalize()
-                        if div_2v2 == 'Y' and user_num % 3 != 0:
-                            print('your number is 20')
-                            print(user_num)
-#problem with position / connections of if/else
+                        if div_2v2 == 'Y':
+                            print('is number divisible by 3?')
+                            div_3v2 = input('Y/N: ').capitalize()
+                            if div_3v2 == 'Y' and user_num % 3 == 0:
+                                print('your numb is 30')
+                                print(user_num)
+                            else:
+                                print('your number is 20')
+                                print(user_num)
                         else:
-                            print('your number is 30')
+                            print('your number is 25')
                             print(user_num)   
-                    else:
-                        print('your number is 25')
-                        print(user_num)
-
                             
         else:
             print('5')
