@@ -76,7 +76,7 @@ def number():
                             
         else:
             print('5')
-    else:
+    else: #remove numbers from origional range list
         for elements1 in num_range:
             if elements1 % 5 == 0:
                 num_range.remove(elements1)
@@ -85,6 +85,53 @@ def number():
         print('NOT DIV BY 5')
 
     print('========================================')
+
+    print('number divisible by 7?')
+    div_7 = input('Y/N: ').capitalize()
+    if div_7 == 'Y' and user_num % 7 == 0:
+        div_7_list = (28, 21, 14, 7)
+        print(div_7_list)
+        if user_num in div_7_list:
+            print('is your number odd?')
+            odd_7 = input('Y/N: ').capitalize()
+            if odd_7 == 'Y' and user_num % 2 != 0:
+                odd_7_list = (21, 7)
+                print(odd_7_list)
+                print('is number multiple of 3?')
+                mul_3v7 = input('Y/N: ').capitalize()
+                if mul_3v7 == 'Y':
+                    print('your number is 21')
+                    print(user_num)
+                    sys.exit
+                else:
+                    if mul_3v7 == 'N':
+                        print('your number is 7')
+                        print(user_num)
+                        sys.exit
+            else:
+                print('is your number bellow 20?')
+                bel_20v2 = input('Y/N: ').capitalize()
+                if bel_20v2 == 'Y':
+                    print('your number is 14')
+                    print(user_num)
+                    sys.exit
+                else:
+                    print('your number is 28')
+                    print(user_num)
+
+    else:
+        for elements2 in num_range:
+            if elements2 % 7 == 0:
+                num_range.remove(elements2)
+            new_num_range2 = num_range
+        print(new_num_range2)
+        print('NOT DIV BY 7 or 5')
+
+    print('========================================')
+
+
+
+
 
 
 
