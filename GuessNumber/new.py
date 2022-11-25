@@ -155,6 +155,7 @@ def number():
                     sys.exit
                 else:
                     print('Is your number above 10?')
+                    print('------------------------')
                     abv_10 = input('Y/N: ').capitalize()
                     if abv_10 == 'Y':
                         print('Your number is 18')
@@ -177,6 +178,70 @@ def number():
         print('||||||||||||||||||')
         print('NOT DIVISIBLE BY 3')
         print('||||||||||||||||||')
+
+    print(' ') 
+
+    print('Is your number divisible by 2?')
+    print('------------------------------')
+    div_2v3 = input('Y/N: ').capitalize()
+    if div_2v3 == 'Y' and user_num % 2 ==0:
+        print('Is your number bellow 20?')
+        print('-------------------------')
+        bel_20v4 = input('Y/N: ').capitalize()
+        if bel_20v4 == 'Y' and user_num < 20: 
+            print('Is your number a square number?')
+            print('-------------------------------')
+            sqr_1 = input('Y/N: ').capitalize()
+            if sqr_1 == 'Y':
+                print('Is your number bellow 10?')
+                print('-------------------------')
+                bel_10 = input('Y/N: ').capitalize()
+                if bel_10 == 'Y':
+                    print('Your number is 4')
+                    print(user_num)
+                    sys.exit
+                else:
+                    print('Your number is 16')
+                    print(user_num)
+                    sys.exit
+            else: 
+                print('Is your number divisible by 4?')
+                div_4v2 = input('Y/N: ').capitalize()
+                if div_4v2 == 'Y':
+                    print('Your number is 8')
+                    print(user_num)
+                    sys.exit
+                else:
+                    print('Your number is 2')
+                    print(user_num)
+                    sys.exit
+        else:
+            print('If you double your number is it greater than 50?')
+            grt_50 = input('Y/N: ').capitalize()
+            if grt_50 == 'Y':
+                print('Your number is 26')
+                print(user_num)
+                sys.exit
+            else:
+                print('Your number is 22')
+                print(user_num)
+                sys.exit
+    else:
+        for elements4 in num_range:
+            if elements4 % 2 == 0:
+                num_range.remove(elements4)
+            new_num_range4 = num_range
+        print(new_num_range4)
+        print('||||||||||||||||||')
+        print('NOT DIVISIBLE BY 2')
+        print('||||||||||||||||||')
+    
+    print(' ')
+
+
+
+
+
 
 
 
