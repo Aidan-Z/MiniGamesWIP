@@ -23,4 +23,4 @@ y = pickMovie()
 
 
 
-print(f'you will watch "{y}" because you are indecisive and cant make a basic film choice')
+print(f'Today you will watch "{y}". Youre welcome')
